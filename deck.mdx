@@ -1,139 +1,63 @@
 import { Head} from 'mdx-deck'
 import { syntaxHighlighter } from 'mdx-deck/themes'
 import { condensed } from 'mdx-deck/themes'
+import { Image } from 'mdx-deck'
 
 export const themes = [syntaxHighlighter, condensed]
 
 <Head>
-  <title>Ingeniería del Software #10yearsChallenge</title>
+  <title>Software Architecture #10yearsChallenge</title>
 </Head>
 
-# Ingeniería del Software :shit:
-# #10yearschallenge 
-
----
-
-# Quien soy yo y lo que hago
-Pablo Bermejo. Platform Engineering Manager para un plataforma SaaS en DXC.
-
-(Foto Instagram en el curro con todos al lado)
-
----
-
-# Captura Pantalla de mi Charla 2011
-Eran todo J2EE. EJB. Todo "Enterprise". Todo grande. Todo productos. Todo infrastructura. Todo potencia.
-
----
-
-# Enteprise Stack. 
-JavaEE
-
-XML
-
-Oracle
-
-Web Services, EJB.
-
-SOA. Pero en su acpeción pesada de ESB.
-
-Infraestrucutra a medida. Como mucho, virtualizada.
-
----
-
-# Espagueti vs Lasaña vs Ravioli
-De monolitos a microservicios. Pero ojo. Microservicios es para romper, no para empezar.
-
-Martin Fowler.
-
----
-
-# La Tecnología
-SPAs en arquitectura REST y microservicios.
-
-JavaScript y TypeScript.
-
-Frameworks de front-end: Angular, REACT, Vue. Donde están invirtiendo las grandes. Facebook, Netflix, Microsoft, Google.
-
-Frameworks de backend: Node.js
-
----
-
-# El Stack
-MEAN stack
-
-MongoDB. Express. Angular. Node.js
-
-Consumiendo APIs REST
-
-Todo JavaScript. Incluso para el intercambio de mensajes.
-
-Thank you TC39 and EcmaScript 6 (ES6)
-
----
-
-# APIs REST
-Una API es un UI. Solo que el usuario es otra máquina.
-
-Domain Driven Design.
-
-Hypermedia
-
-HAL (resources) and JSON Hyperschema (schemas)
-
-Sí, también en formato ES6 (JavaScript) de forma STANDARD.
-
----
-
-# El Function as a Service. Rizando el Rizo.
-Sí, funciones en el servidor.
-
-Backend de APIs.
-
-Event-driven.
-
----
-
-# Los Microservicios (Los Raviolis)
-La lógica de negocio está en los endpoints, no en los pipelines. 
-
-Se necesita mucha madurez. Mucha agilidad. Mucha automatización.
-
-Es un patrón de descomposición, no de creación.
-
----
-
-# El Open Source
-GitHub
-
-La reputación Online
-
-Quién es el mayor contribuidor al mundo open source?
-
-Microsoft
-
----
-
-# GitHub
-El Fork y El Pull Request
-
-Una nueva forma de colaboración agile
-
-El Inner-source
-
----
-
-# La importancia de la comunidad
-La reputación
-
-El perfil de GitHub
-
-Arquitectos con Perfil GitHub
+# Software Architecture
+## #10yearschallenge 
+# :fire:
 
 ---
 
 import Box from 'superbox'
 
-# El Arquitecto
+# Who is this guy?
+
+Platform Engineering Manager for a SaaS Platform at DXC Technology Spain.
+
+# :unamused:
+
+---
+
+# Who is this guy? Again?
+
+Basically, I am a techie.
+
+# :sweat:
+
+---
+
+# What have we learnt in 10 years?
+Software Architecture is like pasta.
+
+# :spaghetti:
+
+---
+
+
+
+<Image src="images/pasta.jpg" size="35%" />
+
+---
+
+# Fact-checking time!
+This is what we were talking about 10 years ago
+
+# :innocent:
+
+---
+
+<Image src="images/tenyearsago.png" size="70%" />
+
+---
+
+# 1. Layered Monolith (Lasagna)
 <Box
   bg='magenta'
   p={4}
@@ -142,120 +66,344 @@ import Box from 'superbox'
     fontWeight:'bold'
   }}
 >
-  Mirar contribuciones de GitHub
+ Service Oriented Architectures. Overengineering.
 </Box>
+
+Hundreds of integration patterns and solutions. Contract based. 
+
+---
+
+# Service Oriented Architectures (SOA)
+Hype during mid 2000s. The pattern was OK but products killed it
+
+Focus on heavy products and Enterpise Infrastructures. _Smart Pipelines_
 
 --- 
 
-# Y si no os lo creeis
+# The Technology: Transactional
+- JavaEE + Struts + XML
+
+- Web Services (SOAP) + EJB 
+
+- Tibco + BPMs + ESBs + Oracle 
+
+---
+
+# 2. Microservices (Ravioli)
+<Box
+  bg='cyan'
+  p={4}
+  fontSize={48}
+  color='black'
+  css={{
+    fontWeight:'bold'
+  }}
+>
+ Self-contained functionality. Light-weight communication
+</Box>
+
+Focus on business capabilities and independently deployable
+
+---
+
+# Microservices Architecture
+It's a decomposition pattern. Breaking the monolith systems
+
+You need a lot of maturity, agility and automation. _Smart Endpoints_
+
+# :hatching_chick:
+
+---
+
+# The Technology: Conversational
+- Single Page Apps (SPAs) in Angular or React or Vue
+
+- REST APIs
+
+- Node.js + NoSQL Databases
+
+---
+
+# MEAN Stack
+MongoDB. Express. Angular. Node.js
+
+Comunicating with REST APIs via JSON. JavaScript _everywhere_
+
+# :dancer:
+
+---
+
+# REST APIs
+An API is a User Interface. It just happens that the user is another machine!
+
+Focus on the business problem and domain data. _Domain Driven Design_
+
+# :facepunch:
+---
+
+# RESTful Architectures
+
+1. Everything is REpresented as a Resource​
+
+2. Resources have State​
+
+3. Resource State is Transferred fully leveraging HTTP (only)
+
+--- 
+
+# Wait a minute! ​
+
+If everything is a resource and we are using the Web then …
+
+everything in REST is just a web page, right?​
+
+# :hushed:
+
+---
+
+# YES
+Hypermedia as the engine of application
+
+Resource Model = Class Diagram. Relationships are _links_
+
+Represented in JSON: HAL (resources) and JSON Hyperschema (schemas)
+
+---
+
+# Benefits of REST(ing)
+
+- Louse Coupling
+- API Economy
+- SaaS
+
+---
+
+# 3. SaaS: Software as a Service
+<Box
+  bg='green'
+  p={4}
+  fontSize={48}
+  color='white'
+  css={{
+    fontWeight:'bold'
+  }}
+>
+ Digital Transformation of Software
+</Box>
+
+From Software to Services. From Product to Platform
+
+# :wave: Licenses :wave:
+
+---
+
+# Digital Platforms
+## The Importance of the Community
+- Every new digital platform is making their APIs public
+
+- Co-Innovate and co-create with external developers
+
+# :walking:
+
+---
+
+# 4. Open Source
+
 <Box
   bg='yellow'
+  p={4}
+  fontSize={48}
+  color='black'
+  css={{
+    fontWeight:'bold'
+  }}
+>
+ "We release it because it is good and we think it can be better"
+</Box>
+
+Who is the biggest Open Source Contributor in the world?
+
+---
+
+<Image src="images/mslogo.jpg" size="70%" />
+
+---
+
+<Image src="images/github1.png" size="30%" />
+
+---
+
+# GitHub
+_It is not a code repository. It is a revolutionary Software Engineering Platform_
+
+- GitFlow
+- Fork
+- Pull Requests
+- Inner-sourcing
+
+---
+
+# Work on your GitHub Proifile
+It is about online reputation. 
+
+Architects do have GitHub profiles.
+
+# :heart:
+
+---
+
+# Really?
+Yes. And they still code
+
+Don't confuse a Software Architect with a Solution Architect
+
+# :scream:
+
+--- 
+# In case you don't believe it ...
+
+---
+
+<Image src="images/ojacques.png" size="60%" />
+
+---
+
+<Image src="images/jbartle9.png" size="60%" />
+
+---
+
+<Image src="images/cswan.png" size="60%" />
+
+---
+
+# And yes, HE is still coding ...
+
+--- 
+
+<Image src="images/billgates.jpeg" size="60%" />
+
+---
+
+# Developers are the New Rock Stars 
+It's a craft
+
+# :guitar:
+--- 
+
+# Everything can be treated as code
+- Platform as Code
+- Networking as Code
+- Infrastructure as Code
+- Documentation as Code
+- Security as Code.
+
+
+- Even this presentation is Code!
+
+---
+
+# Low-Code Platforms
+Just pay attention and be skeptic
+
+Yes, I am very opinionated!
+
+# :poop:
+
+---
+
+# Developer Portals
+Co-Innovate and co-create in a Digital Innovation Platform
+
+Ecosystems: We can't do everything alone
+
+# :muscle:
+
+---
+
+# 5. Future of Software Architecture
+<Box
+  bg='magenta'
   p={4}
   fontSize={48}
   css={{
     fontWeight:'bold'
   }}
 >
-  Bill Gates todavía programa
+ What's coming for the next 10 years?
 </Box>
 
---- 
-
-# Todo as Code
-Platform as Code. Networking as Code. Infra as Code. Documentation as Code. Testing as Code. Security as Code.
-
-Dios mío. Presentaciones as Code.
+# :crystal_ball:
 
 ---
 
-# Low Code
-Ojo :shit:
+# Serverless
+Functions as a Service. Event-driven.
+
+A complete new level on Cloud Computing.
+
+# :neutral_face:
 
 ---
 
-# SaaS
-De Producto a Plataforma.
-
-De Software a Servicio
-
-La comunidad
-
----
-
-# Portales de Desarrollo
-Para co-innovar. Para co-Crear
-
-No se pueden hacer las cosas SOLOs.
-
-Ecosistemas.
-
-Insurtechs. Fintechs. Startups.
-
-Plataforma Digital de Innovación
-
----
-
-# Futuro: Serverless
-El puto futuro.
-
-Wardley mapping.
-
-AWS. Azure. GCP.
-
----
-# Futuro: "Oye Alexa, Despliega mi Web"
+# "Alexa, Please deploy my web ..."
 Conversational Programming
 
+Spinning up infrastructure and applications from voice commands
+
+# :no_mouth:
+
 ---
 
-# Futuro: Distribuidas.
-Distributed Ledgers.
+# Distributed Ledgers
+Peer to peer computing
 
 Blockchain.
 
-Peer to peer.
+# :cold_sweat:
 
 ---
 
-# Futuro: Ojito a la Programación Funcional
-Scala. Elm. Clojure.
+# Functional Programming
+Scala. Elm. Clojure ... JavaScript.
 
-JavaScript?
+If favours collaboration in Open Source projects!
 
-Favorece la colaboración y el open source.
+# :flushed:
 
 ---
 
-# Futuro: Lenguajes?
-gRPC
-
+# Languages and Tools
 WebAssembley
 
 Rust
 
----
-
-# Futuro: Platformas?
-Machine Learning. Machine Teaching. AI.
+# :confused:
 
 ---
 
-# Futuro: Stacks?
-MEAN Stack vs SAFE stack vs TICK stack
+# Artificial Intelligence
+Machine Learning
+
+Machine Teaching
+
+# :rage:
+
+---
+
+# New Development Stacks?
+**SAFE Stack**: _End-to-end functional programming stack_
+
+**TICK Stack**: _End-to-end data processing programming stack_
+
+# :confounded:
 
 --- 
 
-# El rol del arquitecto
-Diseño de Pipelines.
-
-Diseño de Plataformas.
-
-Qué se puede programar. Qué se puede automatizar.
-
-Utilizando la nube.
-
-Es lo que conecta a los usuarios con la infraestructura.
+# The role of the architect
+- Automation pipelines
+- Coding for the Cloud using new stacks
+- Design of distributed systems
 
 ---
 
-<https://github.com/peibolsang/>
+<https://medium.com/@peibolsang/>
